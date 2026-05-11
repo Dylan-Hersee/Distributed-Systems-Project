@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package targets;
+
+service TargetsService{
+    rpc showTargets (Empty) returns (TargetsResponse);
+}
+
+message Empty{
+
+}
+
+message Target{
+string targetId = 1;
+string targetDesc = 2;
+repeated string indicators = 3;
+repeated string indicatorDesc = 4;
+}
+
+message TargetsResponse{
+    repeated Target targets = 1;
+}

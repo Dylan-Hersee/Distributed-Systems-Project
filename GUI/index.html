@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UN Sustainable Development Goal 9 Smart system</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="nav">
+        <img src="UN_emblem_blue.svg.jpg" alt="" class="logo">
+        <nav class="container">
+            <ul class="nav-link">
+                <li><a href="">Targets</a></li>
+                <li><a href="">News & Events</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="header">
+            <div class="left">
+            <h1> Industry, innovation <br>
+                and infrastructure</h1>
+            <p>
+                Goal 9 Build resilient infrastructure, 
+                promote inclusive <br> 
+                and sustainable industrialization <br>
+                and foster innovation
+           </p>
+           </div>
+           <div class="right">
+            <img src="1-Goal-of-the-Month_July-2020.jpg" alt="" class="mainimg">
+            <div class="bg-col"></div>
+        </div>
+        <div class="button1" id="button">
+        <button id="goals" onclick="showTargets()">Targets</button>
+        </div>
+        <div id="main-goal">
+            <div id="countryInputContainer" hidden>
+                <label>Enter Country:</label>
+                <input type="text" id="countryInput" placeholder="Enter country name">
+                <button onclick="progressTracker('9.2')">Check Progress</button>
+            </div>
+        </div>
+        <div class="carousel" id="eventCard" >
+            <div class="card" id="card1">Event 1</div>
+            <div class="card" id="card2">Event 2</div>
+            <div class="card" id="card3">Event 3</div>
+            <div class="card" id="card4">Event 4</div>
+            <div class="card" id="card5">Event 5</div>
+
+        </div>
+        <div class="events">
+            <h2>Interested In Attending</h2>
+            <form action=""></form>
+                <select class="select" id="eventSelect" name="eventSelect">
+                    <option>Choose a Target</option>
+                    <option>Increase access to financial services</option>
+                    <option>Promote inclusive and sustainable industrialization</option>
+                    <option>Encourage innovation</option>
+                    <option>Enhance scientific research</option>
+                    <option>Upgrade infrastructure</option>
+                    <option>Provide sustainable transport</option>
+                    <option>Empower small-scale industries</option>
+                    <option>Support technological progress</option>
+                    <option>Increase access to information and communication technology</option>
+                </select>
+                <br></br>
+                <input type="date" id="eventDate" name="eventDate">
+                <br></br>
+                <input type="location" id="eventLocation" name="eventLocation" placeholder="Enter your nearest location">
+                <br></br>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <br></br>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="chat">
+                <h2>Chat with us!</h2>
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+       <script src="main.js"></script>
+    </body>
+</html>
